@@ -1,5 +1,5 @@
 <?php
-include 'boot.php';
+include 'config.php';
 
 $ch = curl_init();
 
