@@ -1,6 +1,20 @@
 <?php
 include 'config.php';
 
+/***
+
+itunes.apple.com/us/app/#{APPNAME(LOWERCASE SPACES ARE DASHES?)}/id#{APPID}
+
+ARTWORK IN THE PAGE:
+<a href="http://itunes.apple.com/us/app/namely/id487041855?mt=8" class="artwork-link"><div class="artwork"><img width="75" height="75" alt="Namely" class="artwork" src="http://a1.mzstatic.com/us/r1000/081/Purple/v4/15/78/c7/1578c773-4b41-91d6-bef8-d20b4ee61fbe/mzl.oswrptqy.75x75-65.jpg" /><span class="mask"></span></div></a>
+
+
+
+***/
+
+
+
+
 $ch = curl_init();
 
 $row = $dbh->query("SELECT begin_date FROM daily_raw ORDER BY begin_date DESC LIMIT 1")->fetch();
